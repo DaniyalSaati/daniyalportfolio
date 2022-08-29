@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    .contain{
+        margin-top: -63px;
+        width: 100%;
+        height: 100vh;
+        background-color:white;
+        display: flex;
+        align-items: center;
+        
+    }
+    .Navbar a{
+      font-size: xx-large;
+    }
+    .box1{
+        width: 50%;
+        height: 100vh;
+        background-color:#ecf0ff;
+        
+         display: flex;
+         
+        align-items: center; 
+
+    }
+    
+    .main{
+         /* margin-left: 90%;
+         background-color: rgb(235, 0, 0);
+         
+         display:inline-flex; */
+         
+          position: relative;
+         left: -11%; 
+         /* background-color: rgb(102, 255, 0); */
+         text-align: center;
+         
+         
+         
+        
+    }
+    .main h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    color: #3e64ff;
+    letter-spacing: 4px;
+    }
+    .main .name{
+        font-size: 70px;
+        font-weight: 800;
+        color: black;
+        font-family: 'Poppins';
+    }
+    H1{
+        font-size: 26px;
+    }
+    .type{
+        color: #3e64ff;
+    }
+     @media (max-width:1024px){
+        .main{
+            left: -15%;
+        }
+    }
+    @media (max-width:768px){
+        .main{
+            left: -20%;
+        }
+        .image {
+             margin-left: 20%;
+             min-width: 60vw;
+        }
+        
+    }
+    @media (max-width:600px){
+        .main{
+            left: -23%;
+            
+        }.main .name{
+            font-size: 60px;
+        }
+    }
+    @media (max-width:425px){
+        .main{
+            left: -27%;
+            
+        }
+        .main .name{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    H1{
+        font-size: 17px;
+    }
+    
+    }
+    @media (max-width:320px){
+        .main{
+            left: -27%;
+            
+        }
+        .main .name{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    H1{
+        font-size: 15px;
+    }
+    
+    } 
+    @media (max-width:767px){
+      .impor{
+      display: none;
+    }
+    }
+    @media (max-width:368px){
+      .btn{
+      display: none;
+    }
+    }
+    nav{
+        background: transparent;
+    }
+    .contain2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    td{
+        padding: 10px;
+    }
+    .image{
+        width: 40vw;
+        
+        
+    }
+    .image img{
+        width: 100%;
+        
+    }
+    .info{
+       margin-top: 50px;
+    }
+    .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .head-1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px;
+    font-family: 'Poppins';
+    }
+    .cards{
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      text-align: center;
+    }
+    
+    .s{
+      margin-bottom: 70px;
+    }
+    .footer{
+      height: 80vh;
+      width: 100%;
+      background-color: black;
+      color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    ul{
+        list-style: none;
+    }
+    .margin-top{
+      margin-top: 10px;
+    }
+    .special{
+      width: 100%;
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      justify-content: center;
+      text-align: center; 
+      color: #ecf0ff;
+      background-image:url("images/main2.jpg");
+      
+    }
+   
+
+    
+    .free {
+      padding: 30px;
+      font-size: 40px;
+      color: #ecf0ff;
+    }
+    
+    svg:hover{
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    }
+    .available{
+      color: rgb(0, 255, 119);
+    }
+    /* .hover-nav{
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .hover-nav a:hover{
+      border-bottom: 2px solid black;
+    } */
+
+    .th{
+      font-weight: 700;
+    }
+    
+    .impor{
+      color: #3e64ff;
+      text-decoration: none;
+      line-height: 400px;
+      /* margin-left: -100px; */
+      font-size: 50px;
+      font-weight: 500;
+      
+      
+
+    }
+    .container3{
+      background-color: #ecf0ff;
+    }
+    .one{
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px;
+      
+    }
+    .two{
+      font-size: 20px;
+      font-weight: 400;
+      color: rgb(10, 10, 10);
+    }
+    #nav{
+      background-color: #ecf0ff;
+    }
+    /* ex */
+    .portfolio .portfolio-item {
+          margin-bottom: 30px;
+        }
+        
+        .portfolio #portfolio-flters {
+          padding: 0;
+          margin: 0 auto 15px auto;
+          list-style: none;
+          text-align: center;
+          border-radius: 50px;
+          padding: 2px 15px;
+        }
+        
+        .portfolio #portfolio-flters li {
+          cursor: pointer;
+          display: inline-block;
+          padding: 8px 16px 10px 16px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1;
+          text-transform: uppercase;
+          color: #fff;
+          background: rgba(255, 255, 255, 0.1);
+          margin: 0 3px 10px 3px;
+          transition: all 0.3s ease-in-out;
+          border-radius: 4px;
+        }
+        
+        .portfolio #portfolio-flters li:hover,
+        .portfolio #portfolio-flters li.filter-active {
+          background: #18d26e;
+        }
+        
+        .portfolio #portfolio-flters li:last-child {
+          margin-right: 0;
+        }
+        
+        .portfolio .portfolio-wrap {
+          transition: 0.3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .portfolio .portfolio-wrap::before {
+          content: "";
+          background: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          left: 30px;
+          right: 30px;
+          top: 30px;
+          bottom: 30px;
+          transition: all ease-in-out 0.3s;
+          z-index: 2;
+          opacity: 0;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-info {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          text-align: center;
+          z-index: 3;
+          transition: all ease-in-out 0.3s;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-info::before {
+          display: block;
+          content: "";
+          width: 48px;
+          height: 48px;
+          position: absolute;
+          top: 35px;
+          left: 35px;
+          border-top: 3px solid #fff;
+          border-left: 3px solid #fff;
+          transition: all 0.5s ease 0s;
+          z-index: 9994;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-info::after {
+          display: block;
+          content: "";
+          width: 48px;
+          height: 48px;
+          position: absolute;
+          bottom: 35px;
+          right: 35px;
+          border-bottom: 3px solid #fff;
+          border-right: 3px solid #fff;
+          transition: all 0.5s ease 0s;
+          z-index: 9994;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-info h4 {
+          font-size: 20px;
+          color: #fff;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-info p {
+          color: #ffffff;
+          font-size: 14px;
+          text-transform: uppercase;
+          padding: 0;
+          margin: 0;
+          cursor: pointer;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-links {
+          text-align: center;
+          z-index: 4;
+          cursor: pointer;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-links a {
+          color: #fff;
+          margin: 0 2px;
+          font-size: 28px;
+          display: inline-block;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        
+        .portfolio .portfolio-wrap .portfolio-links a:hover {
+          color: #63eda3;
+        }
+        
+        .portfolio .portfolio-wrap:hover::before {
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+        }
+        
+        .portfolio .portfolio-wrap:hover .portfolio-info {
+          opacity: 1;
+        }
+        
+        .portfolio .portfolio-wrap:hover .portfolio-info::before {
+          top: 15px;
+          left: 15px;
+        }
+        
+        .portfolio .portfolio-wrap:hover .portfolio-info::after {
+          bottom: 15px;
+          right: 15px;
+        }
+        
+        /*--------------------------------------------------------------
+        # Portfolio Details
+        --------------------------------------------------------------*/
+        .portfolio-details {
+          padding-top: 40px;
+          background: rgba(0, 0, 0, 0.8);
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          overflow-y: auto;
+        }
+        
+        .portfolio-details .container {
+          padding-top: 20px;
+          padding-bottom: 40px;
+        }
+        
+        .portfolio-details .portfolio-title {
+          font-size: 26px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        
+        .portfolio-details .portfolio-info {
+          padding-top: 45px;
+        }
+        
+        .portfolio-details .portfolio-info h3 {
+          font-size: 22px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+        
+        .portfolio-details .portfolio-info ul {
+          list-style: none;
+          padding: 0;
+          font-size: 15px;
+        }
+        
+        .portfolio-details .portfolio-info ul li+li {
+          margin-top: 10px;
+        }
+        
+        .portfolio-details .portfolio-info p {
+          font-size: 15px;
+          padding: 15px 0 0 0;
+        }
+        
+        @media (max-width: 992px) {
+          .portfolio-details .portfolio-info {
+            padding-top: 20px;
+          }
+        }
+        
+        .portfolio-details .swiper-pagination {
+          margin-top: 20px;
+          position: relative;
+        }
+        
+        .portfolio-details .swiper-pagination .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          opacity: 1;
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+          background-color: #18d26e;
+        
+        }
+        .portfolio-info a{
+text-decoration: none;
+}
+    /* experi end */
+    </style>
+</head>
+<body>
+    <!--          Navbar          -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Daniyal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav Navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active hover-nav" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Daniyal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--          Navbar End          -->
+    <section id="home">
+    <div class="contain">
+        <div class="box1">
+        </div> 
+        <div class="main">
+            <h2>Hey! i Am</h2>
+            <span class="name">Daniyal</span>
+            <h1>I Am A <span class="type"></span></h1>
+        </div>
+        <div class="box2"></div>
+    </div>
+
+    </section>
+
+    <!-- About US -->
+    <section id="about">
+    <div class=" container2 container-fluid">
+        <div class="row">
+        <div class=" col-lg-5 col-md-12 image"><img src="images/me.jpg" alt="" srcset=""></div>
+        <div class=" col-lg-5 col-md-12 info ">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, ullam tempora. Repellendus, itaque neque. Sequi et voluptatibus iusto, maiores fugiat</p>
+        <table>
+            <tr>
+              <td class="th">Name:</td>
+              <td>Daniyal</td>
+              
+            </tr>
+            <tr>
+              <td class="th">Father Name:</td>
+              <td>Javed Iqbal</td>
+              
+            </tr>
+            <tr>
+              <td class="th">Address:</td>
+              <td>Iyari Karachi Pakistan</td>
+              
+            </tr>
+            <tr>
+                <td class="th">Email:</td>
+                <td>daniyalsaati789@gmail.com</td>
+                
+              </tr>
+              <tr>
+                <td class="th">Phone:</td>
+                <td>92-3182768486</td>
+                
+              </tr>
+          </table>
+        </div>
+    </div>
+        </div>
+
+    </section>
+   <!-- service -->
+   <section id="Service">
+   <h1 class="head-1">Our Services </h1>
+   <div class="container-fluid service s">
+     <div class="row justify-content-center">
+   <div class="card text-white bg-primary col-sm-12 col-md-12 col-lg-3  m-4 cards " style="max-width: 18rem; ">
+    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-layout-text-window-reverse" viewBox="0 0 16 16">
+      <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
+      <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"/>
+    </svg></div>
+    <div class="card-body">
+      <h5 class="card-title">Web Design</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary col-sm-12 col-md-12 col-lg-3 m-4 cards" style="max-width: 18rem;">
+    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+      <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+      <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+    </svg></div>
+    <div class="card-body">
+      <h5 class="card-title">UI/UX Design</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary col-sm-12 col-md-12 col-lg-3 m-4 cards" style="max-width: 18rem;">
+    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
+      <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+      <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z"/>
+    </svg></div>
+    <div class="card-body">
+      <h5 class="card-title">Web Development</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+   </div>
+</div>
+
+</section>
+<div class="special">
+  <h1 class="free">I am  <span class="available">Available</span> For Freelancing</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptate. Cupiditate atque voluptas </p>
+  <button  type="button" class="btn btn-primary btn">Click Here</button>
+</div>
+
+<!-- Our project -->
+
+ <!-- ======= Portfolio Section ======= -->
+ <section id="portfolio" class="portfolio">
+  <div class="container">
+    <h1 class="head-1">My Projects</h1>
+    <div class="row portfolio-container justify-content-center">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-5">
+        <div class="portfolio-wrap">
+          <img src="images/web1.PNG" class="img-fluid" alt="">
+          <div class="portfolio-info">
+              <div class="portfolio-links">
+                  
+                  <a href="https://eprojects.azfamtech.com/vinegerfood/home.html" target="_dani">
+                <h4>Vineger</h4>
+                <p>Food</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mt-5">
+        <div class="portfolio-wrap">
+          <img src="images/web3.PNG" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <div class="portfolio-links">
+              <a href="https://daniyalsaati.github.io/store/" target="_dani">
+              <h4>Medicine</h4>
+              <p>Store</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-5">
+        <div class="portfolio-wrap">
+          <img src="images/web2.PNG" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <div class="portfolio-links">
+              <a href="https://techwiz3.azfamtech.com/TaskForce/" target="_dani">
+              <h4>Fashion</h4>
+              <p>Store</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+</div>
+<section id="Resume">
+<div class="container-fluid container3">
+  <div class="row">
+  <div class="qualification col-lg-6 col-md-6 ">
+<ul class="fix">
+  <li class="impor">Education</li>
+  <li class="impor">Experience</li>
+  <li class="impor">Skills</li>
+</ul>
+</div>
+<div  class=" col-lg-6 col-md-6 ">
+  <h1 class="head-1" >Education</h1>
+  <h2 class="one">Aptech In Progress</h2>
+<h2 class="two">Front end Developer</h2>
+<h2 class="one">Intermediate (2020-22)</h2>
+<h2 class="two">Group:Computer Science</h2>
+<h2 class="one">Matric (2018-2020)</h2>
+<h2 class="two">Group:Science</h2>
+
+<h1 class="head-1" >Experience</h1>
+<h2 class="one">Semester2 Project</h2>
+<h2 class="two">Website design in Html,Css,Javascript,jquery <br>,Bootstrap</h2>
+<h2 class="one">Techwiz 3</h2>
+<h2 class="two">Techwiz is technology-based competition globally <br> across all Aptech centers.</h2>
+
+<h1 class="head-1" >Skills</h1>
+
+<h2 class="one">Html</h2>
+<div class="progress  ">
+  <div class="progress-bar" role="progressbar" style="width: 99%;"aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="one">Css</h2>
+<div class="progress ">
+  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="one">Javascript</h2>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="one">Jquery</h2>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="one">Bootstrap</h2>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+<!-- contact us -->
+<section id="Contact">
+<div class="container-fluid">
+  <h1 class="head-1">Contact Me</h1>
+  <div class="row ">
+    
+    <div class="image col-lg-6"><img src="images/me.jpg" alt="" srcset=""></div>
+    <div class="mb-3 col-lg-6 mt-5 ">
+      <label  class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" enter your name">
+
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      
+      <label  class="form-label">Your Message</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter your message"><br>
+      <button type="button" class="btn btn-dark">Submit</button>
+    </div>
+  </section>
+<!-- education -->
+<!-- footer -->
+<div class=" container-fluid footer">
+  <div class="row">
+    <h1 class="margin-top">About Us</h1>
+  <div class="  about col-lg-4">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, est ut? Repellat, minus quo doloremque veniam assumenda atque iure facere, molestiae reprehenderit laborum a! Eligendi reprehenderit quod quasi sequi eaque!</p>
+  </div>
+  <div class=" col-lg-4">
+    
+    <ul>
+      <h1 class="margin-top" >Service</h1>
+      <li>Web Design</li>
+      <li>UI/UX Design</li>
+      <li>Web Development</li>
+    </ul>
+  </div>
+
+  <div class=" question col-lg-4">
+    <ul>
+      <h1 class="margin-top">Have a Question</h1>
+      
+      <li>01382768486</li>
+      <li>daniyalsaati789@gmail.com</li>
+    </ul>
+
+  </div>
+</div>
+</div>
+    </div>
+</div>
+
+    <script src="typed.min.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+  strings: [' Web Developer', ' Web Designer','UI/UX Designer'],
+  typeSpeed: 70,
+  backSpeed: 60,
+  loop:true,
+});
+    </script>
+</body>
+</html>
